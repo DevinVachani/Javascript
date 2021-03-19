@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h1>Open Console</h1>
+        <script>console.log("hi I'm a consoles screen"); 
+        //Shows "Hi im a consoles screen"
+        var firstName="Devin";
+        console.log(firstName);
+        //Shows Devin
+        var LastName="Vachani";
+        console.log(LastName);
+        //shows Vachani
+        var FullName=firstName.concat(LastName);
+        console.log(FullName);
+        //Concat means concatenation, adds two words
+        var LengthOfFullName=FullName.length;
+        console.log(LengthOfFullName);
+        //.length counts the length of the string
+        var Name1="I am Devin Vachani";
+        console.log(Name1);
+        //Displays a line
+        var ReplaceName=Name1.replace("Devin","Mike");
+        console.log(ReplaceName);
+        //switches all Devin with Mike
+        var CapitalName="DEVIN";
+        var makingLowercase=CapitalName.toLowerCase();
+        console.log(makingLowercase);
+        //Makes capital letters lowercase
+        var LowercaseName="devin";
+        var makingCapital=LowercaseName.toUpperCase();
+        console.log(makingCapital);
+        //makes lowercase letters capital
+        var SqRoot=Math.sqrt(100);
+        console.log(SqRoot);
+        //finds the sq root of 2 num
+        var number=Math.max(1,2);
+        console.log(number);
+        //finds the biggest number
+        var num=Math.min(1,2);
+        console.log(num)
+        //finds the smallest number
+        var power=Math.pow(4,2);
+        console.log(power)
+        //finds the first number to the power of the second number
+        var pwr=Math.pow(89,234);
+        console.log(pwr)
+        //show a number to the power of another number
+        var bignum=3.141592653589793;
+        console.log(bignum);
+        //shows a 3.141592653589793
+        var tofixednum=bignum.toFixed(2);
+        console.log(tofixednum)
+        //shortens the number to 3.14
+        var number1=2;
+        var number2=12;
+        console.log(number1+number2);
+        //adding
+        var string1=number1.toString();
+        var string2=number2.toString();
+        console.log(string1+string2);
+        console.log(typeof number1);
+        console.log(typeof string1);
+        //shows types of strings
+        number1++;
+        console.log(number1);
+        //plus 1
+        number2--;
+        console.log(number2);
+        //minus 1
+        var fruits=["apple","Banana","Pear"];
+        console.log(fruits);
+        //shows the array
+        //document.getElementById("DeclareFruits").innerHTML=fruits;
+        //somethings wrong with this line
+        console.log(fruits[0]);
+        //shows apple
+        console.log(fruits.length);
+        //shows the length of the array
+        for(i=0;i<fruits.length;i++){
+            console.log(fruits[i]);
+            //shows the array from 0 to 2
+        }
+        fruits.push("Mango");
+        console.log(fruits);
+        // .push adds to the array
+        var alphabet=["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m"]
+        console.log(alphabet);
+        //shows the alphabet
+        alphabet.sort();
+        console.log(alphabet);
+        //sorts the letters
+        alphabet.reverse();
+        console.log(alphabet);
+        //reverses it
+        var m=["2","7","12","98","57","123","152","10","90"];
+        console.log(m);
+        //shows the number
+        console.log(Math.max.apply(Math,m));
+        //shows the biggest number in the array
+        console.log(Math.min.apply(Math,m));
+        //shows the smallest number in the array
+        fruits.unshift("Dragon Fruit");
+        console.log(fruits);
+        //adds a new value to the array in the frount
+        fruits.shift();
+        console.log(fruits);
+        //removes the first value in the array
+        fruits.pop();
+        console.log(fruits);
+        //deletes the last value in the array
+        console.log(fruits.concat(alphabet))
+        </script>
+        <p>How To Declare The Arrays</p>
+        <h4 id="DeclareFruits">Fruits</h4>
+    </body>
+    </html>
